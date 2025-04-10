@@ -1,0 +1,46 @@
+
+Theoretical Part:
+***************
+Git status: Indicates how your staging area  and working directory are currently doing.
+1-Untracked files—new files not yet uploaded to Git—are displayed.
+2-files that have been altered (changes not staged for commit).
+3-Staged files (modifications prepared for commit).
+4-Branch details and the state of synchronization with distant repositories.
+
+Git init: Creates a hidden.git folder to log changes and initializes a new Git repository in the current directory.
+used to initiate a new project's version control.
+
+Git commit: Stores a snapshot of the history of the repository's staged modifications.
+requires the changes to be described in a commit message (-m).
+only impacts the local repository; to share changes remotely, use git push.
+
+git push:Local commits are uploaded to a remote repository (such as GitHub or GitLab) using the git push command.
+adds your most recent changes to the remote branch.
+needs a branch name (such as main) and a remote name (usually origin).
+*************
+I don't agree with what Ahmed said.
+ The significance of the git status command lies in its ability to:
+ Find out which files are untracked, unstaged, or staged.
+ Don't make any unintended alterations.
+ Make sure that you are on the right branch before committing.
+ Ignoring git status might result in errors such as inadvertently making changes or neglecting to stage a file.
+******************
+ Two popular platforms besides GitHub:
+GitLab
+Bitbucket
+*********************
+Important features offered:
+
+ Version control using Git
+ Support for branching and merging
+ Issue tracking for bug reports and tasks
+ Pull/merge code review requests
+ Permissions and access control for teamwork
+ (each developer has a local copy of the entire repository, including the complete history of changes. This allows developers to work offline and independently and later synchronize their changes with other team members or remote repositories.)
+*****************************
+A team can absolutely collaborate on software using a self-hosted Git server. It’s common in companies with strict data policies or offline environments.
+*****************
+Command	Meaning / Effect
+git push -u origin main:	Pushes main to origin and sets it as the upstream branch
+Future git push / git pull:	Will work without arguments, because the upstream branch is already tracked
+
